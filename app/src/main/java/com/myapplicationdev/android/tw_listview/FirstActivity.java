@@ -20,12 +20,17 @@ public class FirstActivity extends AppCompatActivity {
 
         lv = (ListView)findViewById(R.id.lvText);
 
+
+
         al = new ArrayList<String>();
         al.add("Year 1");
         al.add("Year 2");
         al.add("Year 3");
 
+        aa = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1,al);
+
         lv.setAdapter(aa);
+        aa.notifyDataSetChanged();
 
 
 
