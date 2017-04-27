@@ -18,9 +18,14 @@ public class FirstActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        lv = (ListView)findViewById(R.id.lvText);
 
         al = new ArrayList<String>();
         al.add("Year 1");
+        al.add("Year 2");
+        al.add("Year 3");
+
+        lv.setAdapter(aa);
 
 
 
